@@ -1,2 +1,2 @@
 # DETR_WASORIA
-Internship Submission at WASORIA LeCreusot, France 
+Internship Submissions at WASORIA LeCreusot, France 
