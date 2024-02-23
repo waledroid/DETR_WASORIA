@@ -23,7 +23,7 @@ Run the main and make sure to parse other arguments, example:
  # svd     -- for Singular Value Decomposition 
  # pca     -- for Eigen Vector, Eigen Valuee  
  # svm     -- SVM for PCA-Transformed MNIST Classification
- # linereg -- for classification using linear Regression on MNIST dataset  
+ # linereg -- Linear Regression for Digit Recognition on MNIST dataset  
 </pre>  
  
 #### SVD:
@@ -71,3 +71,6 @@ since MNIST is a multiclass classification problem, use the SVC class from the s
 - Evaluate the Model:
 - Use the trained SVM model to predict the classes of the PCA-transformed test set. Assess the model's performance using appropriate metrics, such as accuracy, precision, recall, or the confusion matrix. 
 </pre>
+
+### Linear Regression for Digit Recognition:
+While linear Regression for classification is unconventional, The objective of linear regression is to minimize the sum of the squared residuals (differences between observed and predicted values), known as the least squares criterion
