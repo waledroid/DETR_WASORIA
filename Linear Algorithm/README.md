@@ -50,3 +50,9 @@ U_k⋅S_k⋅VkT, where S k is the diagonal matrix containing only the top k sing
 <br>
 <br>
 
+### Principal Component Analysis (PCA):
+PCA provides both the directions and the magnitude of the variance of the data in the new feature space, enabling dimensionality reduction while preserving as much of the data's original structure as possible.
+
+We start by calculating the covariance matrix of the data set, to understand variation between data. Then compute the eigenvalues (directions) and eigenvectors (magnitude of variance) of this covariance matrix
+<br>
+
