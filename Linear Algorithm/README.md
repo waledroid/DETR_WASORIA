@@ -73,4 +73,6 @@ since MNIST is a multiclass classification problem, use the SVC class from the s
 </pre>
 
 ### Linear Regression for Digit Recognition:
-While linear Regression for classification is unconventional, The objective of linear regression is to minimize the sum of the squared residuals (differences between observed and predicted values), known as the least squares criterion
+While linear Regression for classification is unconventional, 
+<br><img src="images/svd.png" width="500" ><br>
+The objective of linear regression is to minimize the sum of the squared residuals (differences between observed and predicted values), known as the least squares criterion
