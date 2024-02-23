@@ -3,6 +3,19 @@ This Package performs 3 separate Linear Algorithms on MNIST Datatset:<br>
 ### 2 - The calculation of Eigen-values and Eigen-vector <br>
 ### 3 - Linear Regression. <br>
 
+Below is the file structure designed:
+<pre>
+LinAlgo/
+├── __init__.py
+├── main.py (call functions in /algos/ )
+└── algos/ 
+    ├── __init__.py
+    ├── svd.py
+    |── eigen_VV.py
+    └── linear_regression.py
+    └── SVD reconstructed_images/
+</pre>
+
  <br>
 Run the main and make sure to parse other arguments, example:  
 <pre>
@@ -13,6 +26,7 @@ Run the main and make sure to parse other arguments, example:
  # linereg -- for classification using linear Regression on MNIST dataset  
 </pre>  
  
-
+#### SVD:
+Applying SVD reduces the dimensionality of the data while preserving its most significant features.
 
  
