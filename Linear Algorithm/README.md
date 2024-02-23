@@ -71,7 +71,8 @@ since MNIST is a multiclass classification problem, use the SVC class from the s
 - Evaluate the Model:
 - Use the trained SVM model to predict the classes of the PCA-transformed test set. Assess the model's performance using appropriate metrics, such as accuracy, precision, recall, or the confusion matrix. 
 </pre>
-
+<br>
+<br>
 ### Linear Regression for Digit Recognition:
 While linear Regression for classification is unconventional, 
 <br><img src="images/linereg.jpg" width="500" ><br>
