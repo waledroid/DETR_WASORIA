@@ -61,7 +61,7 @@ Then compute the eigenvalues (directions) and eigenvectors (magnitude of varianc
 
 ### SVM for PCA-Transformed MNIST Classification:
 For classification, the main idea behind SVM is to find the hyperplane that best separates the classes in the feature space. In a two-dimensional space, this hyperplane is a line, but in higher dimensions, it's a plane or a hyperplane.
-
+<br><img src="images/pca.png" width="500" ><br>
 The best hyperplane is the one that has the maximum margin, which is the maximum distance between the hyperplane and the nearest data point from either class. These nearest data points are called support vectors, as they support or define the hyperplane.
 ##### How
 <pre>
