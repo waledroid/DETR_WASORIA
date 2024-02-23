@@ -30,3 +30,4 @@ Run the main and make sure to parse other arguments, example:
 Applying SVD reduces the dimensionality of the data while preserving its most significant features.
 
  In the SVD, the original image is decomposed into three matrices 
+ <img src="images/svd.png" width="500" >
