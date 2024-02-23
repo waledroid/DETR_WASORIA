@@ -22,7 +22,7 @@ Run the main and make sure to parse other arguments, example:
  python main.py svd
  # svd     -- for Singular Value Decomposition 
  # pca     -- for Eigen Vector, Eigen Valuee  
- # svm     -- for Support vector Machine to classify the reduced data from PCA
+ # svm     -- SVM for PCA-Transformed MNIST Classification
  # linereg -- for classification using linear Regression on MNIST dataset  
 </pre>  
  
@@ -52,7 +52,21 @@ U_k⋅S_k⋅VkT, where S k is the diagonal matrix containing only the top k sing
 
 ### Principal Component Analysis (PCA):
 PCA provides both the directions and the magnitude of the variance of the data in the new feature space, enabling dimensionality reduction while preserving as much of the data's original structure as possible.
-
+##### How
+<pre>
 We start by calculating the covariance matrix of the data set, to understand variation between data. Then compute the eigenvalues (directions) and eigenvectors (magnitude of variance) of this covariance matrix
+</pre>
 <br>
 
+### SVM for PCA-Transformed MNIST Classification:
+For classification, the main idea behind SVM is to find the hyperplane that best separates the classes in the feature space. In a two-dimensional space, this hyperplane is a line, but in higher dimensions, it's a plane or a hyperplane.
+
+The best hyperplane is the one that has the maximum margin, which is the maximum distance between the hyperplane and the nearest data point from either class. These nearest data points are called support vectors, as they support or define the hyperplane.
+##### How
+<pre>
+since MNIST is a multiclass classification problem, use the SVC class from the sklearn.svm module. SVC will automatically use one-vs-one or one-vs-all strategy for multiclass classification.
+- Determine linear kernel or non-linear kernel (e.g., RBF, polynomial) based on the complexity of the transformed features using simple grid search with cross-validation.
+- Train the SVM Classifier: bFit method of the SVC class with the PCA-reduced features as input and the corresponding labels.
+- Evaluate the Model:
+Use the trained SVM model to predict the classes of the PCA-transformed test set. Assess the model's performance using appropriate metrics, such as accuracy, precision, recall, or the confusion matrix. 
+</pre>
