@@ -32,7 +32,7 @@ for every image in the batch, Apply SVD to reduce the dimensionality of the data
 
  In the SVD, the original image is decomposed into three matrices 
 <br>
- <img src="../images/svd.png" width="500" >
+ <img src="images/svd.png" width="500" >
 <br>
 The matrix S in the full SVD is a diagonal matrix of singular values, reduce it to keep only the top 
 k singular values (for compression), reduce also the dimensions of U and V transpose
