@@ -54,7 +54,8 @@ U_k⋅S_k⋅VkT, where S k is the diagonal matrix containing only the top k sing
 PCA provides both the directions and the magnitude of the variance of the data in the new feature space, enabling dimensionality reduction while preserving as much of the data's original structure as possible.
 ##### How
 <pre>
-We start by calculating the covariance matrix of the data set, to understand variation between data. Then compute the eigenvalues (directions) and eigenvectors (magnitude of variance) of this covariance matrix
+We start by calculating the covariance matrix of the data set, to understand variation between data. 
+Then compute the eigenvalues (directions) and eigenvectors (magnitude of variance) of this covariance matrix
 </pre>
 <br>
 
@@ -68,5 +69,5 @@ since MNIST is a multiclass classification problem, use the SVC class from the s
 - Determine linear kernel or non-linear kernel (e.g., RBF, polynomial) based on the complexity of the transformed features using simple grid search with cross-validation.
 - Train the SVM Classifier: bFit method of the SVC class with the PCA-reduced features as input and the corresponding labels.
 - Evaluate the Model:
-Use the trained SVM model to predict the classes of the PCA-transformed test set. Assess the model's performance using appropriate metrics, such as accuracy, precision, recall, or the confusion matrix. 
+- Use the trained SVM model to predict the classes of the PCA-transformed test set. Assess the model's performance using appropriate metrics, such as accuracy, precision, recall, or the confusion matrix. 
 </pre>
