@@ -76,3 +76,11 @@ since MNIST is a multiclass classification problem, use the SVC class from the s
 While linear Regression for classification is unconventional, 
 <br><img src="images/linereg.jpg" width="500" ><br>
 The objective of linear regression is to minimize the sum of the squared residuals (differences between observed and predicted values), known as the least squares criterion
+### How
+<pre>
+- Data Preparation: MNIST images are loaded, flattened into vectors, and converted to NumPy arrays for processing.
+- Model Training: A Linear Regression model is instantiated and trained on the flattened training images and labels.
+- Model Evaluation: Predictions are made on the test set, and performance is evaluated using mean squared error and accuracy of rounded predictions.
+- Visualization: A few test images are displayed alongside their actual and predicted labels for qualitative evaluation.
+- Accuracy Reporting: The accuracy of the model, based on rounded predictions, is calculated and reported as a percentage.
+</pre>
