@@ -46,3 +46,7 @@ k singular values (for compression), reduce also the dimensions of U and V trans
 U_k⋅S_k⋅VkT, where S k is the diagonal matrix containing only the top k singular values
 </pre>
 
+
+<br>
+<br>
+
