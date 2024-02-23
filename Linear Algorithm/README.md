@@ -4,9 +4,9 @@ This program performs 3 separate Linear Algorithms on MNIST Datatset:<br>
 ### 3 - Linear Regression. <br>
 
  <br>
-Run using the Argument Parsed
+Run the main and make sure to parse other arguments, example:  
 <pre>
- python main 
+ python main.py svd
  # svd     -- for Singular Value Decomposition 
  # pca     -- for Eigen Vector, Eigen Valuee  
  # svm     -- for Support vector Machine to classify the reduced data from PCA
