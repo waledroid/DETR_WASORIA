@@ -29,4 +29,4 @@ Run the main and make sure to parse other arguments, example:
 #### SVD:
 Applying SVD reduces the dimensionality of the data while preserving its most significant features.
 
- 
+ In the SVD, the original image is decomposed into three matrices 
